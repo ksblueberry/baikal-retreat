@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAIKAL / OLKHON — Ретрит на Байкале · 10–20 августа 2026</title>
+  <meta name="description" content="10-дневный оздоровительный ретрит на острове Ольхон. Йога, медитации, экскурсии, баня. Группа до 12 человек." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__line">B</span>
+      <span class="loader__line">A</span>
+      <span class="loader__line">I</span>
+      <span class="loader__line">K</span>
+      <span class="loader__line">A</span>
+      <span class="loader__line">L</span>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- SIDE NAVIGATION -->
+  <aside class="side-nav">
+    <div class="side-nav__brand">
+      <span class="brand-mark">◐</span>
+      <span class="brand-text">Baikal Retreat</span>
+    </div>
+    <nav class="side-nav__menu">
+      <a href="#about" class="nav-link"><span class="num">01</span><span class="label">Ретрит</span></a>
+      <a href="#stats" class="nav-link"><span class="num">02</span><span class="label">Цифры</span></a>
+      <a href="#program" class="nav-link"><span class="num">03</span><span class="label">Программа</span></a>
+      <a href="#places" class="nav-link"><span class="num">04</span><span class="label">Места силы</span></a>
+      <a href="#guides" class="nav-link"><span class="num">05</span><span class="label">Ведущие</span></a>
+      <a href="#book" class="nav-link"><span class="num">06</span><span class="label">Записаться</span></a>
+    </nav>
+    <div class="side-nav__foot">
+      <span>Olkhon · 53°09′N</span>
+    </div>
+  </aside>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar__left">
+      <span class="dot"></span>
+      <span>10 — 20 АВГ · 2026</span>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+    <a href="https://wa.me/79213994666" target="_blank" rel="noopener" class="topbar__cta">Написать в WhatsApp <span>→</span></a>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">01 · Ретрит</a>
+    <a href="#stats">02 · Цифры</a>
+    <a href="#program">03 · Программа</a>
+    <a href="#places">04 · Места силы</a>
+    <a href="#guides">05 · Ведущие</a>
+    <a href="#book">06 · Записаться</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" data-parallax>
+      <div class="hero__image"></div>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__meta hero__meta--left">
+      <span class="vline"></span>
+      <span>OLKHON&nbsp;·&nbsp;AUG&nbsp;2026</span>
+    </div>
+    <div class="hero__meta hero__meta--right">
+      <span>53°09′N · 107°20′E</span>
+      <span class="vline"></span>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow"><span></span> Выездной ретрит на Байкале</p>
+      <h1 class="hero__title">
+        <span class="word w1">Baikal</span>
+        <span class="slash">/</span>
+        <span class="word w2"><em>Olkhon</em></span>
+      </h1>
+      <p class="hero__sub">
+        Десять дней тишины, воды и дыхания.<br/>
+        Священный остров. Группа до 12 человек.<br/>
+        <strong>10 — 20 августа 2026</strong>
+      </p>
+      <div class="hero__actions">
+        <a href="#book" class="btn btn--primary">
+          <span>Записаться на ретрит</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#about" class="btn btn--ghost">Узнать больше</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Йога · Медитация · Дыхательные практики · Шаманка · Огой · Сальники · Баня · Тишина ·</span>
+        <span>Йога · Медитация · Дыхательные практики · Шаманка · Огой · Сальники · Баня · Тишина ·</span>
+        <span>Йога · Медитация · Дыхательные практики · Шаманка · Огой · Сальники · Баня · Тишина ·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-tag"><span>01</span> О ретрите</div>
+    <div class="about__grid">
+      <div class="about__lead reveal">
+        <h2 class="display">
+          Здесь земля <em>помнит</em> воду,<br/>
+          а вода — <em>помнит</em> тебя.
+        </h2>
+      </div>
+      <div class="about__copy reveal">
+        <p>Приглашаем вас на десятидневный оздоровительный ретрит на берегу священного Байкала — в сердце природы, где кристально чистая вода и воздух, а земля и скалы несут энергию тысячелетий.</p>
+        <p>Место — <strong>остров Ольхон</strong>, одно из самых мощных мест силы на планете. Здесь вы не просто отдохнёте — вы перезагрузитесь телом, разумом и душой.</p>
+        <p>Каждое утро начинается с мягкой йоги у воды. Дни наполнены практиками, прогулками к местам силы, баней на дровах и вечерами у костра под северными звёздами.</p>
+      </div>
+      <div class="about__visual reveal">
+        <div class="about__photo about__photo--1"></div>
+        <div class="about__caption">
+          <span>I.</span>
+          <p>Ольхон — крупнейший остров Байкала, сакральный центр для бурятского шаманизма.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats" id="stats">
+    <div class="section-tag light"><span>02</span> Цифры ретрита</div>
+    <div class="stats__grid">
+      <div class="stat reveal">
+        <div class="stat__num"><span data-count="10">0</span></div>
+        <div class="stat__label">Дней на острове</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num"><span data-count="12">0</span></div>
+        <div class="stat__label">Мест в группе</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num"><span data-count="2">0</span></div>
+        <div class="stat__label">Экскурсии силы</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num"><span data-count="8">0</span></div>
+        <div class="stat__label">Видов практик</div>
+      </div>
+    </div>
+    <div class="stats__line">
+      <span>10 — 20 · 08 · 2026</span>
+      <span class="dash"></span>
+      <span>OLKHON ISLAND, RU</span>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM ============ -->
+  <section class="program" id="program">
+    <div class="section-tag"><span>03</span> Программа</div>
+    <div class="program__head reveal">
+      <h2 class="display">
+        Десять дней<br/>
+        <em>в ритме воды.</em>
+      </h2>
+      <p class="program__intro">Каждый день — шаг к внутреннему балансу. Программа выстроена так, чтобы тело, дыхание и разум входили в один ритм с озером.</p>
+    </div>
+
+    <div class="program__list">
+      <article class="prog-card reveal">
+        <div class="prog-card__num">01</div>
+        <div class="prog-card__body">
+          <h3>Утренняя йога у воды</h3>
+          <p>Мягкая практика на берегу Байкала. Растяжка, дыхание, встреча восхода.</p>
+        </div>
+        <div class="prog-card__tag">Daily</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">02</div>
+        <div class="prog-card__body">
+          <h3>Прогулки по местам силы</h3>
+          <p>Тропы Ольхона, скала Шаманка, бухты и мысы — медленный шаг и тишина.</p>
+        </div>
+        <div class="prog-card__tag">Walk</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">03</div>
+        <div class="prog-card__body">
+          <h3>Две экскурсии</h3>
+          <p>Водная — на остров Огой к ступе Просветления. Сухопутная — к Байкальским сальникам.</p>
+        </div>
+        <div class="prog-card__tag">Travel</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">04</div>
+        <div class="prog-card__body">
+          <h3>Два банных парения</h3>
+          <p>Баня на дровах с видом на озеро. Очищение, восстановление, перезагрузка.</p>
+        </div>
+        <div class="prog-card__tag">Ritual</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">05</div>
+        <div class="prog-card__body">
+          <h3>Динамические медитации</h3>
+          <p>Глубокая работа с состоянием — выход за пределы привычного ума.</p>
+        </div>
+        <div class="prog-card__tag">Meditation</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">06</div>
+        <div class="prog-card__body">
+          <h3>Чакровое дыхание Ошо</h3>
+          <p>Мощная дыхательная техника для очищения и активации энергетических центров.</p>
+        </div>
+        <div class="prog-card__tag">Breath</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">07</div>
+        <div class="prog-card__body">
+          <h3>Тантрический массаж в парах</h3>
+          <p>Практика «5 стихий» — телесная работа в мягкой и безопасной форме.</p>
+        </div>
+        <div class="prog-card__tag">Touch</div>
+      </article>
+
+      <article class="prog-card reveal">
+        <div class="prog-card__num">08</div>
+        <div class="prog-card__body">
+          <h3>Танцевальные практики</h3>
+          <p>Свободное движение, телесные и театральные упражнения — встреча с собой через тело.</p>
+        </div>
+        <div class="prog-card__tag">Dance</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PLACES ============ -->
+  <section class="places" id="places">
+    <div class="section-tag"><span>04</span> Места силы</div>
+    <div class="places__head reveal">
+      <h2 class="display">Куда ведёт <em>тропа.</em></h2>
+      <p>Три точки на карте острова, ради которых сюда возвращаются.</p>
+    </div>
+
+    <div class="places__grid">
+      <a class="place place--ogoy reveal" href="#book">
+        <div class="place__bg"></div>
+        <div class="place__overlay"></div>
+        <div class="place__content">
+          <span class="place__num">I</span>
+          <h3>Остров Огой</h3>
+          <p>Ступа Просветления. По преданиям — вход в Шамбалу. Идём на катере, медитируем у воды.</p>
+          <span class="place__cta">Подробнее <em>→</em></span>
+        </div>
+      </a>
+
+      <a class="place place--shaman reveal" href="#book">
+        <div class="place__bg"></div>
+        <div class="place__overlay"></div>
+        <div class="place__content">
+          <span class="place__num">II</span>
+          <h3>Скала Шаманка</h3>
+          <p>Сердце Ольхона. Мыс Бурхан — одна из девяти святынь Азии. Тишина, которую слышишь сердцем.</p>
+          <span class="place__cta">Подробнее <em>→</em></span>
+        </div>
+      </a>
+
+      <a class="place place--salniki reveal" href="#book">
+        <div class="place__bg"></div>
+        <div class="place__overlay"></div>
+        <div class="place__content">
+          <span class="place__num">III</span>
+          <h3>Тропы острова</h3>
+          <p>Прогулки по суше — к Байкальским сальникам и древним мысам. Медленный шаг, широкое дыхание.</p>
+          <span class="place__cta">Подробнее <em>→</em></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote">
+    <div class="quote__bg"></div>
+    <div class="quote__overlay"></div>
+    <div class="quote__content reveal">
+      <span class="quote__mark">“</span>
+      <blockquote>
+        Байкал не отвечает словами.<br/>
+        Он отвечает тишиной — <em>и тебя становится больше.</em>
+      </blockquote>
+      <cite>— Ольхон, август</cite>
+    </div>
+  </section>
+
+  <!-- ============ GUIDES ============ -->
+  <section class="guides" id="guides">
+    <div class="section-tag"><span>05</span> Ведут ретрит</div>
+    <div class="guides__grid">
+      <article class="guide reveal">
+        <div class="guide__photo guide__photo--vlad"></div>
+        <div class="guide__body">
+          <span class="guide__role">Мастер телесных практик</span>
+          <h3>Владимир<br/>Олегович<br/>Железных</h3>
+          <p>Инструктор йоги, энергопрактик. Проводит глубокие медитации и телесные сессии для снятия блоков.</p>
+        </div>
+      </article>
+
+      <article class="guide reveal">
+        <div class="guide__photo guide__photo--grig"></div>
+        <div class="guide__body">
+          <span class="guide__role">Врач-натуропат, мастер Аюрведы</span>
+          <h3>Григорий<br/>Григорьевич<br/>Чегорко</h3>
+          <p>35 лет врачебной практики, опытный массажист. Помогает восстановить внутренний баланс через природные ритмы и оздоровительные практики.</p>
+          <div class="guide__links">
+            <a href="https://wa.me/79213994666" target="_blank" rel="noopener">WhatsApp</a>
+            <span>·</span>
+            <a href="https://t.me/dr_chegorko" target="_blank" rel="noopener">@dr_chegorko</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ INCLUDED + PRICE ============ -->
+  <section class="included" id="included">
+    <div class="section-tag"><span>06</span> Что включено</div>
+    <div class="included__wrap">
+      <div class="included__list reveal">
+        <div class="incl-row"><span>01</span><p>Трансфер до острова Ольхон и обратно</p></div>
+        <div class="incl-row"><span>02</span><p>Проживание 10 дней / 9 ночей в отеле на берегу</p></div>
+        <div class="incl-row"><span>03</span><p>3-разовое вегетарианское питание</p></div>
+        <div class="incl-row"><span>04</span><p>Йога, медитации, дыхательные практики</p></div>
+        <div class="incl-row"><span>05</span><p>Две экскурсии: остров Огой и сальники</p></div>
+        <div class="incl-row"><span>06</span><p>Баня на дровах, посиделки у костра</p></div>
+        <div class="incl-row"><span>07</span><p>Вечерние беседы с ведущими</p></div>
+        <div class="incl-row"><span>08</span><p>Сувениры и подарки от организаторов</p></div>
+      </div>
+
+      <aside class="price reveal">
+        <div class="price__tag">Стоимость</div>
+        <div class="price__sum">
+          <span class="from">от</span>
+          <span class="num">120 000</span>
+          <span class="cur">₽</span>
+        </div>
+        <p class="price__note">за весь ретрит (без билетов до Иркутска). Стоимость может варьироваться в зависимости от программы и времени бронирования.</p>
+        <div class="price__divider"></div>
+        <div class="price__row"><span>Перелёт Москва — Иркутск — Москва</span><strong>≈ 38 000 ₽</strong></div>
+        <div class="price__row"><span>Размер группы</span><strong>до 12 человек</strong></div>
+        <div class="price__row"><span>Размещение</span><strong>парные номера, вид на озеро</strong></div>
+        <a href="#book" class="btn btn--primary btn--full">Забронировать место →</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final" id="book">
+    <div class="final__bg"></div>
+    <div class="final__overlay"></div>
+    <div class="final__content reveal">
+      <p class="final__eyebrow">— Осталось 12 мест</p>
+      <h2 class="final__title">
+        Услышь <em>свою</em><br/>
+        тишину на Байкале.
+      </h2>
+      <p class="final__sub">10 — 20 августа 2026 · Остров Ольхон. Напишите нам, чтобы забронировать место и получить полную программу.</p>
+
+      <div class="final__channels">
+        <a href="https://wa.me/79213994666" target="_blank" rel="noopener" class="channel channel--wa">
+          <span class="channel__ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.9L2 22l4.2-1.6A11 11 0 1 0 20.5 3.5Zm-8.5 17a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-2.5 1 1-2.4-.2-.3a9.4 9.4 0 1 1 6.8 3.1Zm5.2-7c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1a7.6 7.6 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.5 0-.1 0-.3-.1-.4l-.9-2c-.2-.5-.5-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8A10.8 10.8 0 0 0 13 17c.6.3 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z"/></svg>
+          </span>
+          <span class="channel__body">
+            <span class="channel__label">WhatsApp</span>
+            <span class="channel__val">+7 (921) 399-46-66</span>
+          </span>
+          <span class="channel__arrow">→</span>
+        </a>
+
+        <a href="https://t.me/dr_chegorko" target="_blank" rel="noopener" class="channel channel--tg">
+          <span class="channel__ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.8 14.8 9.6 18c.3 0 .5-.1.7-.3l1.7-1.6 3.5 2.5c.6.4 1.1.2 1.2-.6L19 5.3c.2-.8-.3-1.1-.9-.9L2.9 10.5c-.8.3-.8.7-.1.9l3.8 1.2 8.8-5.5c.4-.3.8-.1.5.2"/></svg>
+          </span>
+          <span class="channel__body">
+            <span class="channel__label">Telegram</span>
+            <span class="channel__val">@dr_chegorko</span>
+          </span>
+          <span class="channel__arrow">→</span>
+        </a>
+
+        <a href="tel:+79213994666" class="channel channel--call">
+          <span class="channel__ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <span class="channel__body">
+            <span class="channel__label">Звонок</span>
+            <span class="channel__val">+7 (921) 869-69-10</span>
+          </span>
+          <span class="channel__arrow">→</span>
+        </a>
+      </div>
+
+      <div class="final__contacts">
+        <a href="mailto:info@ayurdoctor.eu">info@ayurdoctor.eu</a>
+        <span>·</span>
+        <a href="https://t.me/+79213994666" target="_blank" rel="noopener">Telegram-чат</a>
+        <span>·</span>
+        <span>Иркутск · Москва · СПб</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="brand-mark">◐</span>
+        <h3>Baikal / Olkhon Retreat</h3>
+        <p>Ретриты у священного озера. Йога, дыхание, тишина.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Навигация</h4>
+        <a href="#about">О ретрите</a>
+        <a href="#program">Программа</a>
+        <a href="#places">Места силы</a>
+        <a href="#guides">Ведущие</a>
+      </div>
+      <div class="footer__col">
+        <h4>Связь</h4>
+        <a href="https://wa.me/79213994666" target="_blank" rel="noopener">WhatsApp · +7 (921) 399-46-66</a>
+        <a href="https://t.me/dr_chegorko" target="_blank" rel="noopener">Telegram · @dr_chegorko</a>
+        <a href="tel:+79218696910">Звонок · +7 (921) 869-69-10</a>
+        <a href="mailto:info@ayurdoctor.eu">info@ayurdoctor.eu</a>
+      </div>
+      <div class="footer__col">
+        <h4>Координаты</h4>
+        <p>53°09′N · 107°20′E<br/>Ольхон, Иркутская обл.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Baikal Retreat. Все права защищены.</span>
+      <span>Made with care · Olkhon Island</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
